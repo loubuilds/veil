@@ -1,0 +1,8 @@
+* text=auto eol=lf
+dist/Veil.html -text -diff linguist-generated=true
+dist/build.json -text linguist-generated=true
+*.png binary
+
+# Fixtures are exact input bytes, including email and saved-session formats.
+tests/fixtures/** -text
+tests/fixtures/hardening/*.eml binary

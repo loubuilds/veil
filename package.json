@@ -1,0 +1,29 @@
+{
+  "name": "veil-offline-pdf",
+  "version": "0.1.0",
+  "private": true,
+  "description": "A self-contained offline document privacy tool for redaction and preparing protected copies for AI.",
+  "license": "AGPL-3.0-only",
+  "author": "Louise Mead",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/loubuilds/veil.git"
+  },
+  "engines": {
+    "node": ">=22.13.0"
+  },
+  "scripts": {
+    "build": "node build.mjs",
+    "test": "node --test tests/core.test.cjs tests/build.test.cjs tests/workflow.test.cjs tests/flow.test.cjs tests/design.test.cjs tests/word.test.cjs tests/spacing.test.cjs tests/import-timeout.test.cjs tests/text-design.test.cjs tests/format-usability.test.cjs tests/hardening.test.cjs tests/glyphs.test.mjs tests/output-formatting.test.cjs tests/capability-feedback.test.cjs tests/links.test.cjs",
+    "test:hardening": "node tests/hardening-browser.mjs"
+  },
+  "devDependencies": {
+    "@pdf-lib/fontkit": "1.1.1",
+    "esbuild": "0.28.2",
+    "fflate": "0.8.3",
+    "pdf-lib": "1.17.1",
+    "pdfjs-dist": "5.6.205",
+    "playwright": "1.62.1",
+    "postal-mime": "3.0.0"
+  }
+}

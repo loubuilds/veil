@@ -1,0 +1,77 @@
+/* Calm workspace: the previous engine remains, its administrative UI is hidden. */
+body.calm>main:not(#calmRoot),body.calm>.session-strip,body.calm>#redactActionDock{display:none!important}
+body.calm .brand-caption,body.calm .head-actions>button:not(#helpOpen):not(#calmSettingsOpen):not(#calmSessionOpen),body.calm .head-actions>.offline{display:none}
+body.calm .masthead{height:64px}body.calm .brand{font-size:29px}body.calm #helpOpen{font-size:13px;width:auto}body.calm .app-footer{margin-bottom:85px}
+#calmRoot{max-width:1100px;margin:0 auto;padding:28px 24px 110px}#calmTitle{text-align:center;font-size:28px;margin:14px 0 10px;letter-spacing:-.7px}#calmSteps{display:flex;justify-content:center;gap:25px;color:#657385;font-size:12px}#calmSteps .active{color:#006e69;border-bottom:2px solid #006e69;padding-bottom:6px}.calm-lead{text-align:center;color:#657385;margin-bottom:26px}.calm-card{max-width:650px;margin:auto;background:white;border:1px solid #dce4e8;border-radius:7px;padding:26px}.calm-tabs{display:flex;gap:5px;border-bottom:1px solid #dce4e8;padding-bottom:12px}.calm-tabs button{flex:1}.calm-tabs .selected{background:#e6f5f2}.calm-start{text-align:center}.calm-upload{display:block;font-size:42px;padding:22px}.calm-links{display:flex;justify-content:center;gap:12px;margin-top:25px}.calm-links button,.text-button{background:transparent;border:0;color:#006e69;padding:3px;text-decoration:underline}.calm-choice{display:block;width:100%;text-align:left;padding:22px;margin-bottom:16px}.calm-choice strong,.calm-choice span{display:block}.calm-choice span{font-size:13px;color:#657385;margin-top:5px}.calm-note{font-size:13px;color:#657385;text-align:center;margin:18px auto;max-width:700px}.calm-check{max-width:700px;margin:20px auto}.calm-page-nav{display:flex;align-items:center;justify-content:center;gap:14px;margin-top:14px}.flow-paper{background:white;max-width:795px;margin:0 auto;padding:48px;min-height:350px;border:1px solid #dce4e8;overflow-wrap:anywhere}.flow-paper mark{background:#a5ebdf;color:inherit;cursor:pointer}.flow-paper [data-flow-paragraph]{cursor:text}#calmPaste{min-height:280px;border:1px solid #cdd6de;padding:18px;overflow-wrap:anywhere}#calmStatus{max-width:800px;margin:0 auto 15px;font-size:13px;color:#657385}#calmStatus.error,#calmReplyError{color:#ad2340}#calmDock{position:fixed;bottom:0;left:0;right:0;z-index:30;background:#fff;border-top:1px solid #dce4e8;padding:15px 24px}#calmDock>div{max-width:1050px;margin:auto;display:flex;align-items:center;gap:18px}#calmNextHint{flex:1;color:#657385;font-size:12px}#calmDock .primary{min-width:160px}.calm-result-options{display:flex;align-items:center;justify-content:center;flex-wrap:wrap;gap:16px}.calm-result-options label{display:flex;align-items:center;gap:12px}#calmFallbackText{white-space:pre-wrap;max-height:300px;overflow:auto}#calmPromptDetails,#calmCorrectionDetails{margin:14px 0}#calmCopyPrompt{margin-top:15px}body.calm .document-panel{max-width:900px;margin:auto}body.calm .document-footer{display:none}body.calm .document-viewport{height:auto;min-height:350px;max-height:65vh}body.calm .tool-bar{flex-wrap:wrap}body.calm #calmSettings .controls{width:auto;display:block!important;border:0;padding:0}body.calm #calmSettings .page-list,body.calm #calmSettings .page-check{display:none}#calmSessionMenu{min-width:260px}#calmSessionMenu button{display:block;width:100%;margin-top:10px}#calmPrecision{max-width:750px}body.calm.working #calmRoot{pointer-events:none;opacity:.75}body.calm #calmRoot [hidden]{display:none!important}
+@media(max-width:650px){body.calm .masthead{padding:0 14px}.head-actions{gap:4px}#calmRoot{padding:16px 12px 125px}#calmTitle{font-size:23px}.calm-card{padding:18px}.flow-paper{padding:24px}.calm-lead{font-size:14px}.calm-page-nav{flex-wrap:wrap}#calmDock{padding:12px}#calmNextHint{display:none}#calmDock>div{justify-content:space-between}.calm-result-options{flex-direction:column}body.calm .tool-bar .brush-label,body.calm .preview-toggle{display:none}.calm-links{flex-wrap:wrap}}
+
+body.calm #calmSettings .controls>.panel-heading,body.calm #calmSettings .controls>p:last-child{display:none}#calmRoot #calmPdfSlot .document-bar #choosePdf{display:none}
+#calmInputChoices{max-width:650px;margin:0 auto 14px;border:0;padding:0}#calmInputChoices button{padding:12px}#calmInputChoices .selected{border-color:var(--teal);color:var(--teal)}
+/* Compact workspace with one page-level vertical scroll. */
+body.calm .masthead{height:52px;padding-inline:22px}body.calm .brand{font-size:26px}
+#calmRoot{padding-top:14px}#calmTitle{font-size:24px;margin:8px 0 6px}.calm-lead{margin-bottom:14px}#calmSteps{gap:20px;font-size:11px}#calmStatus:empty{display:none}
+body.calm:not([data-calm-screen="start"]) #calmTitle{text-align:left;font-size:22px;margin:6px 0}body.calm:not([data-calm-screen="start"]) .calm-lead{text-align:left;font-size:12px;margin:0 0 10px}body.calm:not([data-calm-screen="start"]) #calmSteps{justify-content:flex-start;margin-bottom:7px}
+body.calm .document-viewport{height:auto;max-height:none;min-height:0;overflow:visible;padding:16px 24px;overscroll-behavior:auto}body.calm .document-panel{overflow:visible}body.calm .document-bar{min-height:44px;padding:8px 12px}body.calm .tool-bar{position:sticky;top:0;z-index:5}body.calm .page-stage{max-width:none}
+#calmDock{padding:10px 20px}#calmConfirmSlot:empty{display:none}#calmConfirmSlot .calm-check{margin:0;max-width:520px}#calmConfirmSlot{flex:1}#calmDock>div{gap:12px}#calmResultActions .calm-result-options{justify-content:flex-end;gap:10px;margin-bottom:8px}#calmResultActions select{width:auto;padding:7px}body.calm[data-calm-screen="result"] #calmRoot{padding-bottom:190px}body.calm[data-calm-screen="result"] #calmConfirmSlot{display:none}
+body.calm:has(#redactDialog[open]){overflow:hidden}body.calm .redact-dialog-header .eyebrow{display:none}body.calm .redact-dialog-header{padding-top:14px;padding-bottom:10px}body.calm .redact-dialog-actions{padding-top:10px;padding-bottom:12px}
+@media(max-width:650px){body.calm .masthead{padding-inline:12px}#calmRoot{padding-top:10px}#calmDock{padding:9px 12px}#calmDock>div{flex-wrap:wrap}#calmConfirmSlot{flex-basis:100%;order:-1}#calmNextHint:not(:empty){display:block;flex-basis:100%;order:-1}#calmResultActions .calm-result-options{flex-direction:row;flex-wrap:wrap;font-size:12px}#calmResultActions button{padding:6px 8px}body.calm .document-viewport{padding:12px}body.calm[data-calm-screen="result"] #calmRoot{padding-bottom:260px}}
+#calmNextHint:empty{display:none}
+.flow-paper.designed-pages{padding:0;border:0;background:transparent}.designed-pages canvas{display:block;width:100%;height:auto;margin:14px auto 0;box-shadow:0 2px 12px #17233222}.designed-pages>p{text-align:center;margin:8px 0 20px}
+/* Direction is consistent: backward left, forward and confirmation right. */
+#calmDock>.calm-direction-row{display:flex;align-items:flex-end;justify-content:space-between;gap:24px}#calmForward{margin-left:auto;max-width:820px;display:flex;flex-wrap:wrap;align-items:center;justify-content:flex-end;gap:12px}#calmForward #calmConfirmSlot{flex:0 1 500px;margin-left:auto}#calmForward #calmNextHint{flex:0 1 520px;text-align:right}#calmForward #calmResultActions{width:100%}#calmExtraActions:empty{display:none}.calm-extra-group{display:flex;flex-wrap:wrap;gap:12px;justify-content:flex-end;align-items:center}.calm-extra-group .wide{width:auto;margin:0}.calm-extra-group .calm-choice{width:auto;margin:0;padding:12px 16px}.calm-extra-group .calm-choice span{display:none}.calm-extra-group .text-button{padding:9px 12px}.calm-extra-group #calmChoose{min-width:150px}body.calm .redact-dialog-actions>.button-row{justify-content:space-between}body.calm .redact-dialog-actions>.button-row .primary{order:1;margin-left:auto}body.calm dialog .button-row:has(#confirmImport),body.calm dialog .button-row:has(#saveRecovery),body.calm dialog .button-row:has(#unlockRecovery){justify-content:flex-end}body.calm #calmRoot{padding-bottom:200px}
+@media(max-width:650px){#calmDock>.calm-direction-row{flex-wrap:nowrap;gap:10px}#calmBack{align-self:flex-end;flex-shrink:0}#calmForward{gap:9px;max-width:calc(100% - 78px)}#calmForward #calmConfirmSlot,#calmForward #calmNextHint{flex-basis:100%;order:0;text-align:right}#calmForward .calm-check{text-align:left}#calmForward .calm-extra-group{gap:8px}#calmForward button{font-size:12px}#calmPrimary{min-width:0!important}body.calm #calmRoot{padding-bottom:270px}}
+.calm-links:empty,[data-calm-screen="outcome"]:empty{display:none!important}
+
+body.calm #unlockDialog .button-row .primary{order:1;margin-left:auto}body.calm .calm-import-actions{display:flex;flex-direction:column;align-items:flex-end;gap:12px;margin-top:18px}body.calm .calm-import-actions .check-row{max-width:480px;margin:0}body.calm .calm-import-actions .primary{margin:0}body.calm #convertPaste{display:block;margin-left:auto}
+
+.calm-word-picture{border:1px solid #cdd6de;padding:14px;margin:12px 0;display:flex;flex-direction:column;align-items:flex-end;gap:12px}.calm-word-picture img{max-width:100%;max-height:280px;object-fit:contain;align-self:center}
+
+/* Route choices explain the decision in the content area, with Back in the dock. */
+.calm-outcome{max-width:880px;margin:24px auto 0}.calm-choice-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:20px}.calm-outcome .calm-choice{display:flex;flex-direction:column;align-items:stretch;gap:16px;margin:0;padding:26px;background:#fff;border:1px solid #bdcdd5;border-radius:12px;font-family:inherit;line-height:1.5;box-shadow:0 3px 12px #10253608}.calm-outcome .calm-choice strong{font-family:inherit;font-size:21px;color:var(--ink)}.calm-outcome .calm-choice span{display:block;margin:0;font-size:14px;color:#526575}.calm-outcome .calm-choice .calm-choice-next{margin-top:auto;padding-top:12px;color:var(--teal);font-weight:700;text-align:right}.calm-outcome .calm-choice:hover:not(:disabled){border-color:var(--teal);background:#f2fbf8}.calm-outcome .calm-choice:focus-visible{outline:3px solid var(--teal);outline-offset:4px}.calm-copy-choice{display:flex;flex-wrap:wrap;justify-content:flex-end;align-items:center;gap:8px;margin-top:18px;font-size:13px;color:#526575}.calm-copy-choice button{font-size:13px;padding:8px}body.calm[data-calm-screen="outcome"] #calmRoot{padding-bottom:120px}
+@media(max-width:650px){.calm-outcome{margin-top:18px}.calm-choice-grid{grid-template-columns:1fr;gap:14px}.calm-outcome .calm-choice{padding:20px;gap:10px}.calm-outcome .calm-choice strong{font-size:19px}.calm-copy-choice{justify-content:flex-start}}
+
+/* Credits remain visible beneath the workflow controls. */
+body.calm #calmDock>.app-footer{max-width:1050px;margin:10px auto 0;padding:8px 0 0;border-top:1px solid #e4ebef;display:block}#calmDock .footer-principle{display:none}#calmDock .footer-links{display:flex;justify-content:flex-end;align-items:center;flex-wrap:wrap;gap:6px 16px;font-size:11px}#calmDock .footer-links button,#calmDock .footer-links a{font-size:11px}body.calm #calmRoot{padding-bottom:240px}body.calm[data-calm-screen="outcome"] #calmRoot{padding-bottom:160px}
+@media(max-width:650px){body.calm #calmRoot{padding-bottom:330px}body.calm[data-calm-screen="outcome"] #calmRoot{padding-bottom:190px}#calmDock .footer-links{justify-content:center;gap:4px 12px}}
+
+/* Gate the initial paint before any bundled scripts execute. */
+body.starting>main,body.starting>#calmDock,body.starting>.app-footer,body.starting>.session-strip{display:none!important}body.starting .head-actions{visibility:hidden}#startupNotice,.startup-help{max-width:1050px;margin:28px auto;padding:0 24px;color:#526575;font-size:14px}body:not(.starting)>#startupNotice{display:none}
+
+/* One compact action row; wrap only when the available width requires it. */
+#calmDock{padding:7px 20px 6px}
+#calmDock>.calm-direction-row{align-items:center;gap:16px}
+#calmForward{max-width:none;gap:10px;flex-wrap:wrap}
+#calmForward #calmResultActions{width:auto;flex:0 1 auto}
+#calmResultActions .calm-result-options{margin:0;gap:10px;flex-direction:row}
+#calmResultActions .calm-result-options label{order:1;gap:6px;margin:0}
+#calmForward #calmConfirmSlot{flex:0 1 450px}
+#calmForward #calmNextHint{flex:0 1 340px;font-size:11px}
+body.calm[data-calm-screen="result"] #calmNextHint,body.calm[data-calm-screen="fallback"] #calmNextHint{display:none}
+#calmForward button,#calmBack{margin-block:0;padding:9px 12px;min-height:40px}
+#calmForward .calm-extra-group{gap:10px}
+body.calm #calmDock>.app-footer{margin-top:5px;padding-top:4px}
+#calmDock .footer-links{gap:4px 14px}
+@media(max-width:760px){
+ #calmDock{padding:7px 10px 5px}
+ #calmDock>.calm-direction-row{gap:10px;align-items:flex-end}
+ #calmForward{gap:8px;max-width:calc(100% - 78px)}
+ #calmForward #calmConfirmSlot{flex-basis:100%}
+ #calmForward #calmResultActions{flex:1 1 auto}
+ #calmResultActions .calm-result-options{justify-content:flex-end;gap:6px}
+ #calmForward button,#calmBack{padding:8px 10px}
+ #calmDock .footer-links{gap:3px 10px;font-size:10px}
+}
+
+.browser-warning{max-width:1050px;margin:12px auto;padding:12px 16px;background:#fff5db;border:1px solid #e1c780;border-radius:6px;color:#4d3b16;font-size:13px;line-height:1.5}.browser-warning strong{display:block}#calmGoal[aria-invalid="true"]{border:2px solid #ad2340}#calmGoalError{color:#ad2340;font-size:13px}
+
+.calm-text-tools{display:flex;align-items:center;flex-wrap:wrap;gap:8px;max-width:795px;margin:0 auto 12px}.calm-text-tools span{font-size:13px;color:var(--muted)}.calm-text-tools [aria-pressed=true]{background:var(--teal);color:white;border-color:var(--teal)}#calmRichReview,#calmRichReview *{-webkit-user-select:text;user-select:text}#calmRichReview::selection,#calmRichReview *::selection{background:#b5d8fa;color:#102536}
+
+.calm-capabilities{max-width:900px;margin:0 auto 16px;padding:12px 16px;background:#fff;border:1px solid #dce4e8;border-left:3px solid #007a73;border-radius:5px;font-size:13px}.calm-capabilities dl{margin:8px 0;display:grid;grid-template-columns:1fr 1fr;gap:16px}.calm-capabilities dt{font-weight:700;margin-bottom:3px}.calm-capabilities dd{margin:0;line-height:1.45}.calm-capabilities .hint{margin:6px 0 0;font-size:12px}.calm-capability-notes p{margin:6px 0;color:#755319}@media(max-width:650px){.calm-capabilities dl{grid-template-columns:1fr;gap:8px}}
+/* Keep the welcome heading's programmatic focus without a control-like border. */
+body.calm[data-calm-screen="start"] #calmTitle:focus{outline:none}
+
+.calm-outcome .calm-choice.calm-choice-primary{border:2px solid #007a73;background:#e6f5f2}.calm-choice strong .calm-beta{display:inline-block;margin:0 0 0 6px;padding:2px 6px;border-radius:4px;background:#edf0f5;color:#455468;font-size:11px;vertical-align:middle}
+
+.calm-capabilities summary{cursor:pointer;font-weight:600}.calm-capabilities details[open]>strong{display:block;margin-top:10px}
+
+#calmInputChoices{max-width:800px;gap:12px;align-items:stretch}#calmInputChoices button{text-align:left;min-width:0;padding:16px;align-self:stretch}#calmInputChoices strong{display:block;font-size:16px;margin-bottom:7px}#calmInputChoices span{display:block;font-size:13px;line-height:1.45;color:#455468;font-weight:400}#calmInputChoices .calm-entry-note{margin-top:8px;font-size:12px}.calm-entry-beta{font-size:11px;padding:2px 5px;border-radius:4px;background:#edf0f5;color:#455468;vertical-align:middle}@media(max-width:600px){#calmInputChoices{flex-direction:column}#calmInputChoices button{flex:auto;width:100%}}

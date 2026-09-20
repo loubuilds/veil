@@ -1,0 +1,24 @@
+From: Bronwen Castellan-Sentinel <bronwen.c@example.org>
+To: Support <support@example.com>
+Cc: Aldous Pym <aldous.p@example.net>
+Subject: Complaint about account 12345678
+Date: Tue, 03 Mar 2026 10:15:00 +0000
+Message-ID: <msgid-SENTINEL-1@example.org>
+X-Mailer: SentinelMailer
+MIME-Version: 1.0
+Content-Type: multipart/alternative; boundary="b1"
+
+--b1
+Content-Type: text/plain; charset=utf-8
+
+Dear Support,
+
+My account 12345678 was charged twice on 01/03/2026. Please call me on 07700 900555.
+
+Regards,
+Bronwen Castellan
+--b1
+Content-Type: text/html; charset=utf-8
+
+<html><body><p>Dear Support,</p><img src="https://example.invalid/track.gif"><script>window.__veil_xss=1</script><p>HTML-SENTINEL body</p></body></html>
+--b1--

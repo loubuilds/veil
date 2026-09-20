@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="370" viewBox="0 0 1200 370" role="img" aria-labelledby="title desc">
+<title id="title">Veil. Protect sensitive details before you share.</title><desc id="desc">Offline PDF redaction and protected text for your own AI tools. One HTML file. No account. No AI connection.</desc>
+<rect width="1200" height="370" rx="18" fill="#102536"/>
+<g transform="translate(50 38) scale(1.3)"><path d="M12 11h24M12 37h24" stroke="#fff" stroke-width="5" stroke-linecap="round"/><path d="M5 20.5 42 17.5 43.5 19.5 42.5 23 44 25.5 41.5 28 5.5 30 3.5 28 4.5 24.5 3.5 22.5Z" fill="#7fe0ca"/></g>
+<g font-family="Segoe UI,Arial,sans-serif"><text x="124" y="91" font-size="58" font-weight="700" letter-spacing="-2" fill="#fff">veil<tspan fill="#7fe0ca">.</tspan></text>
+<text x="55" y="165" font-size="38" font-weight="650" fill="#fff">Protect sensitive details</text><text x="55" y="214" font-size="38" font-weight="650" fill="#fff">before you share.</text>
+<text x="55" y="268" font-size="20" fill="#ccdae5">Redact a PDF. Prepare text for your own AI.</text>
+<text x="55" y="320" font-size="16" fill="#7fe0ca">ONE HTML FILE   /   NO ACCOUNT   /   NO AI CONNECTION</text></g>
+<g transform="translate(882 60) rotate(6 115 125)"><rect width="222" height="255" rx="12" fill="#edf6f5"/><rect x="25" y="28" width="105" height="12" rx="4" fill="#102536"/><path d="M25 65h170M25 89h155M25 125h170M25 149h120M25 185h170M25 209h145" stroke="#aebfca" stroke-width="7" stroke-linecap="round"/><rect x="22" y="76" width="120" height="23" rx="3" fill="#102536"/><rect x="88" y="113" width="110" height="24" rx="3" fill="#102536"/><circle cx="200" cy="239" r="32" fill="#7fe0ca"/><path d="m185 239 10 10 20-22" stroke="#102536" stroke-width="6" fill="none" stroke-linecap="round" stroke-linejoin="round"/></g>
+</svg>

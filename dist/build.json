@@ -1,0 +1,12 @@
+{
+  "sha256": "ceac11fc8fc960c5b8cc7d6fd608b3da014c82aebd4bcaad882bec2e0cabd7e7",
+  "bytes": 7456969,
+  "pdfjs": "5.6.205",
+  "pdfLib": "1.17.1",
+  "importersSourceSha256": "3a79d204c69c5a33d2caa091a3c055815dcce1a9e81109ce8483c1e008df9ed2",
+  "importDependencies": {
+    "fflate": "0.8.3",
+    "postal-mime": "3.0.0",
+    "@pdf-lib/fontkit": "1.1.1"
+  }
+}
