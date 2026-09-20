@@ -63,7 +63,9 @@ Outputs are not accessibility-tagged PDFs. Mac Chrome/Edge, native Word renderin
 
 ## Build and test
 
-End users need only `dist/Veil.html`. Contributors need Node.js 22.13 or newer:
+**These instructions are for developers.** To use Veil, just [download Veil.html](https://github.com/loubuilds/veil/releases/latest/download/Veil.html) and open it in desktop Chrome or Edge. You do not need to install dependencies or run these commands.
+
+To build or test Veil from source, you need Node.js 22.13 or newer:
 
 ```sh
 npm ci --ignore-scripts --no-audit --no-fund
